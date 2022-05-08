@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to Chnadrabhan bahetwar portfolio</title>
+    <style>
+        .container{
+            display: flex;
+        }
+
+        .menu{
+            display: flex;
+            width: 20%;
+            background-color: red;
+        }
+
+        .menu li{ 
+           margin: 30px 10px;
+           list-style:  none;
+        }
+
+        .menu li a{ 
+           text-decoration: none;
+        }
+
+        .text{
+            width: 80%;
+            background-color: yellow;
+        }
+
+        .burger{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .line{
+            background-color: rgb(0, 0, 0);
+            margin: 5px;
+            height: 4px;
+            width: 25px;
+        }
+        
+        .burger{
+            display: none;
+        }
+       
+        @media only screen and (max-width: 830px){
+            .burger{
+                display: block;
+            }
+
+           .ull-res{
+                opacity: 0;
+                width: 20%;
+            }
+
+            /*.menu{
+                width: 5%;
+            }*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu menu-go">
+            <nav class="nav">
+                <div class="ull-res">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#" target="_blank">My Intro</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Blog</a></li>
+                    <li><a href="#" target="_blank">Contact Me</a></li>
+                </ul>
+            </div>
+                <div class="burger" onclick="Burgerjs()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem rem, harum aut exercitationem sequi soluta
+            quod ducimus quas ab quam illo, veniam dolor iure. Porro voluptate consectetur soluta repellat amet?</p>
+        </div>
+    </div>
+    <script>
+        ull = document.querySelector(".ull-res")
+        function Burgerjs(){
+            document.querySelector(".menu").classList.toggle("ull-res")
+        }
+    </script>
+</body>
+
+</html>
